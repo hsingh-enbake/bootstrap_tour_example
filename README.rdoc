@@ -15,6 +15,7 @@ Add following in your application.js file
 //= require bootstrap-tour
 
 Setup your tour:
+
 var tour = new Tour ({
         steps: [
         {
