@@ -1,28 +1,40 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Bootstrap tour is js used to give end user option to walk through your website to make it easy to use.
 
-Things you may want to cover:
+Requirement :-
+Bootstrap >= 2.3.0
+Jquery 
 
-* Ruby version
+Add bootstrap-tour js in your assets/javascripts folder
+Add following in your application.js file
+//= require bootstrap-tour
 
-* System dependencies
+Setup your tour:
+var tour = new Tour ({
+        steps: [
+        {
+          element: "#myid1",
+          title: "Test 1",
+          content: "Test content 1",
+          placement: "right"
+        },
+        {
+          element: "#myid2",
+          title: "Test 2",
+          content: "Test Content 2",
+          placement: "right"
+        }],
+        onShown: function (tour) {
+        },
+        onEnd: function (tour) {
+        }
+      });
 
-* Configuration
+// Initialize the tour
+  tour.init();
+// Start the tour
+  tour.start();
 
-* Database creation
+To get full documentation on various functions and variables please visit http://bootstraptour.com/api/.
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
