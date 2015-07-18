@@ -3,11 +3,15 @@
 Bootstrap tour is js used to give end user option to walk through your website to make it easy to use.
 
 Requirement :-
+
 Bootstrap >= 2.3.0
-Jquery 
+
+Jquery
 
 Add bootstrap-tour js in your assets/javascripts folder
+
 Add following in your application.js file
+
 //= require bootstrap-tour
 
 Setup your tour:
